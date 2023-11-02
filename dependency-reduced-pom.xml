@@ -29,6 +29,14 @@
       </plugin>
     </plugins>
   </build>
+  <repositories>
+    <repository>
+      <releases />
+      <snapshots />
+      <id>CrossPlatformConsoleFeed</id>
+      <url>https://pkgs.dev.azure.com/vonurozardic/CrossPlatformConsoleApplication/_packaging/CrossPlatformConsoleFeed/maven/v1</url>
+    </repository>
+  </repositories>
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -51,6 +59,12 @@
       </exclusions>
     </dependency>
   </dependencies>
+  <distributionManagement>
+    <repository>
+      <id>CrossPlatformConsoleFeed</id>
+      <url>https://pkgs.dev.azure.com/vonurozardic/CrossPlatformConsoleApplication/_packaging/CrossPlatformConsoleFeed/maven/v1</url>
+    </repository>
+  </distributionManagement>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>

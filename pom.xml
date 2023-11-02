@@ -13,6 +13,40 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+
+<repositories>
+  <repository>
+   <!-- <id>MSFTProject</id>
+    <url>https://desktop-mlkl4ae/DefaultCollection/Microsoft/_packaging/MSFTProject/maven/v1</url>
+    -->
+    <id>CrossPlatformConsoleFeed</id>
+    <url>https://pkgs.dev.azure.com/vonurozardic/CrossPlatformConsoleApplication/_packaging/CrossPlatformConsoleFeed/maven/v1</url>
+    <releases>
+      <enabled>true</enabled>
+    </releases>
+    <snapshots>
+      <enabled>true</enabled>
+    </snapshots>
+  </repository>
+</repositories>
+
+  <distributionManagement>
+    <repository>
+      <!--
+      <id>MSFTProject</id>
+      <url>https://desktop-mlkl4ae/DefaultCollection/Microsoft/_packaging/MSFTProject/maven/v1</url>
+     -->
+      <id>CrossPlatformConsoleFeed</id>
+      <url>https://pkgs.dev.azure.com/vonurozardic/CrossPlatformConsoleApplication/_packaging/CrossPlatformConsoleFeed/maven/v1</url>
+     <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </distributionManagement>
+
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
